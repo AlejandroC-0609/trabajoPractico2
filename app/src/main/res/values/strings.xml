@@ -4,4 +4,7 @@
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
     <string name="page_title">Iniciar Sesion\n</string>
     <string name="atras">atras</string>
+    <string name="flecha_atras">flecha atras</string>
+    <string name="cerrar">cerrar</string>
+    <string name="cerrar_sesion">cerrar sesion</string>
 </resources>

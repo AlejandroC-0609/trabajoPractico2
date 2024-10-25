@@ -1,0 +1,21 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Dos_mitades"
+        android:enabled="true"
+        android:icon="@drawable/baseline_abc_24"
+        android:title="Dos mitades"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/Dos_palabras"
+        android:enabled="true"
+        android:icon="@drawable/baseline_device_hub_24"
+        android:title="Dos palabras"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/Quitar_fragmento"
+        android:enabled="true"
+        android:icon="@drawable/baseline_format_align_justify_24"
+        android:title="Quitar fragmento"
+        tools:ignore="HardcodedText" />
+</menu>

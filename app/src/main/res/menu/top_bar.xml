@@ -4,7 +4,7 @@
     <item
         android:id="@+id/backDosMitades"
         android:title="@string/atras"
-        android:contentDescription="flecha atras"
+        android:contentDescription="@string/flecha_atras"
         app:showAsAction="ifRoom" />
 
 </menu>
