@@ -3,6 +3,6 @@
     <item
         android:id="@+id/cerrar1"
         android:title="@string/cerrar"
-        <!--agregar drawable-->
-        android:contentDescription="@string/cerrar_sesion" />
+        android:contentDescription="@string/cerrar_sesion"/>
+    <!--agregar drawable-->
 </menu>
