@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/backDosMitades"
+        android:title="@string/atras"
+        android:contentDescription="flecha atras"
+        app:showAsAction="ifRoom" />
+
+</menu>
