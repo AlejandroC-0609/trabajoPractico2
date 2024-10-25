@@ -27,18 +27,38 @@
         app:titleCentered="true" />
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/te_voy_a_ayudar_a_solucionar_el_problema_de_las_2_mitades_n_n1_ingresa_una_cadena_de_caracteres_10_2_te_ayudare_a_cortar_la_cadena_en_dos_partes_quot_iguales_quot_si_la_longitud_de_la_cadena_es_impar_colocare_el_car_cter_central_en_la_primera_cadena_de_modo_que_la_primera_cadena_contenga_un_car_cter_m_s_que_la_segunda_10_3_luego_imprimir_la_nueva_cadena_en_una_sola_fila_con_la_primera_y_la_segunda_mitad_intercambiadas_la_segunda_mitad_es_la_primera_y_la_primera_mitad_es_la_segunda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/constraintLayout"
+        app:layout_anchorGravity="center">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@color/white"
-            app:menu="@menu/menu_bar"
-            app:itemIconTint="@color/black"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemIconTint="@color/black"
+        app:menu="@menu/menu_bar" />
     </RelativeLayout>
 
 

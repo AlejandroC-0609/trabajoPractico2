@@ -2,6 +2,7 @@
 
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -26,25 +27,85 @@
         app:title="@string/page_title"
         app:titleCentered="true" />
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@color/white"
-            app:menu="@menu/menu_bar"
-            app:itemIconTint="@color/black"/>
+
+        <EditText
+            android:id="@+id/usuarioOcorreo"
+            android:layout_width="286dp"
+            android:layout_height="40dp"
+            android:autofillHints=""
+            android:background="@drawable/roundededittext"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usuario_o_correo_label"
+            app:layout_constraintVertical_bias="0.041" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/usuario_o_correo_label"
+            android:layout_width="147dp"
+            android:layout_height="20dp"
+            android:autofillHints=""
+            android:importantForAutofill="no"
+            android:text="@string/Correo"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <EditText
+            android:id="@+id/contraseñaCampoInicio"
+            android:layout_width="286dp"
+            android:layout_height="40dp"
+            android:background="@drawable/roundededittext"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.238"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contraseñaLabelInicio"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <TextView
+            android:id="@+id/contraseñaLabelInicio"
+            android:layout_width="147dp"
+            android:layout_height="20dp"
+            android:text="@string/contrase_a"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usuarioOcorreo"
+            app:layout_constraintVertical_bias="0.046" />
+
+        <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Te voy a ayudar a solucionar el problema de las 2 mitades.\n Ingresa una cadena de caracteres. \n Te ayudare a cortar la cadena en dos partes \"iguales"\ (si la longitud de la cadena es impar, colocare el carácter central en la primera cadena, de modo que la primera cadena contenga un carácter más que la segunda).
-Luego imprimiré la nueva cadena en una sola fila con la primera y la segunda mitad intercambiadas (la segunda mitad es la primera y la primera mitad es la segunda" />
-    </RelativeLayout>
+            android:layout_marginTop="20dp"
+            android:text="Ingresar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contraseñaCampoInicio" />
 
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
